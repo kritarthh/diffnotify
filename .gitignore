@@ -1,0 +1,13 @@
+__pycache__/
+dist/
+build/
+archive/
+link_history
+*.png
+*.log
+*.spec
+*.pkl
+*.json
+imgtools
+aliexpress
+jobs.sh
