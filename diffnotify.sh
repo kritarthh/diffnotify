@@ -66,7 +66,11 @@ function compare {
 
 while true; do
     fetch $LINK ${hash}_new.png
-    compare
+    if [[ $? -eq 0 ]]; then
+        compare
+    else
+        echo "error fetching new result..."
+    fi
     echo "sleeping for 20 minutes..."
     sleep 1200
 done
